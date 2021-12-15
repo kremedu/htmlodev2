@@ -7,58 +7,107 @@
     <title>Patika: Front End / HTML - Ödev 2 </title>
 </head>
 <body>
-    <h1>Kerem Educat</h1>
-    <h3>Hakkımda</h3>
-    <!-- Hakkımda paragrafı -->
-        <p>
-            Merhaba. Kod yazmak çok keyif aldığım bir iş. Arduino, C# ve Python ile programlar yazabiliyorum.<br>
-            Kendimi Web konusunda da geliştirmek için <!-- patika linki --><a href="https://www.patika.dev">Patika</a> ve <!-- kodluyoruz linki --><a href="https://www.kodluyoruz.org">Kodluyoruz</a> sitelerinde verilen eğitimlerden yararlanıyorum. <b>Size de tavsiye ederim</b>.
-
-        </p>
+    <header>
+        <p><b>Üst Menü</b><p>
+        <p><a href="#aboutme">Hakkımda</a> | <a href="#arduino">Arduino</a> | <a href="#csharp">C#</a> | <a href="#python">Python</a></p>
+    </header>
+    
+    <section>
+        <h1>Kerem Educat</h1>  
+        
+        <h3 id="aboutme">Hakkımda</h3>
+        <!-- Hakkımda paragrafı -->
+            <p>
+                Merhaba. Kod yazmak çok keyif aldığım bir iş. Arduino, C# ve Python ile programlar yazabiliyorum.<br>
+                Kendimi Web konusunda da geliştirmek için <!-- patika linki --><a href="https://www.patika.dev">Patika</a> ve <!-- kodluyoruz linki --><a href="https://www.kodluyoruz.org">Kodluyoruz</a> sitelerinde verilen eğitimlerden yararlanıyorum. <b>Size de tavsiye ederim</b>.
+            </p>
+    </section>
     <!-- Çalışmalar Kısmı -->
-    <div id=calismaKismi>
+    <section>
         <h2>Bazı Yazılım Çalışmalarım</h2> 
-        <!-- Arduino -->               
-        <h3 id=arduino>- Arduino -</h3>
-            <h4>- Web entregeli (BackEnd only) - Isı-Nem Takip sistemi</h4>
-            <p>
-                Bu çalışmamda ESP8266 Wifi modülünü ve DHT22 ısı-nem sensörünü kullanarak<br> 
-                yaptığım cihaz sayesinde ölçülen değerlerin oluşturduğum web sitesine iletilmesini gerçekleştirdim. <br><br>
-                Bu sitede hesap oluşturma, e-posta adresine gönderilen kod ile hesap doğrulama, şifremi unuttum, hesaba yeni cihaz kayıt etme,<br>
-                kayıtlı cihazların listelenmesi ve ölçümlerinin gösterilmesi gibi sayfalar/fonksiyonlar mevcut. <br><br>
-                Ancak bu çalışmamda öncelikli amacım arduino ile web arasında veri iletişimini sağlamak olduğundan <br>
-                ve Front End bilgim yok denebilecek kadar az olduğundan site prototip aşamasında.
-            </p>
-        <!-- C# -->
-        <h3 id=csharp>- C# -</h3>
-            <h4>- Otomasyon Programi</h4>
-                <p>
-                    Bir Nesne-İlişkisel eşleme çerçevesi (object relational mapper (O/RM)) olan Entity Framework 6 kullanılarak Code First yöntemi<br>
-                    ile yaptığım bu otomasyon programı FrontOffice ve BackOffice olmak üzere 2 Ana Modülden oluşmakta.<br><br>
-                    BackOffice Modülü İşletmenin kendi içerisinde yaptığı değişikliklerin sisteme girildiği modüldür. <br>
-                    Admin tarafından yapılan Yeni Ürün veya Personel Ekleme gibi işlemler bulunur.<br><br>
-                    FrontOffice ise İşletmenin çalıştığı esnada yapılan işlemlerin gerçekleştiği modüldür. <br>
-                    Siparişlerin alınması, üretilen ürünlerin adetleriyle sisteme girilmesi gibi personel tarafından yapılan işlemleri bulunur.<br>
-                </p>
-            <h4>-Web entregeli (BackEnd only) - Isı-Nem Takip sistemi</h4>
-                <p>Arduino kısmında bahsettiğim çalışmanın Web sayfasındaki Back End fonksiyonlarini C# (ASP.NET) ile kodladim.</p>
-        <!-- Python -->
-        <h3 id=python>- Python -</h3>
-        <h4>- Basit Web tarayıcı</h4>
-            <p>
-                PyQt kütüphaneleri ile yaptığım, Önceki sayfa, sonraki sayfa, sayfa yenileme, adres çubuğu ve home sayfası<br>
-                gibi temel unsurların bulunduğu basit bir web tarayıcı uygulaması. 
-            </p>
-    
-        <h4>- Anlık olarak küçük çaplı programlara ihtiyaç duyduğumda</h4>
-        <p>
-            Python dilinde çalışmak diğerlerine göre daha hızlı olduğundan (IDE nin açılması gibi), kisa çözümü olan ihtiyaçlarda kullandığım bir dil.<br>
-            Bir benzetme olarak, Kitap yazdığımda C#, kisa not almam gerektiğinde ise python tercih ediyorum.<br><br>
-            Örnek olarak: Toplu dosya tipi dönüşümü, toplu yeniden adlandırma veya PyAutoGui işlemleri gibi aslında manuel yapılabilen<br>
-            ama sayısı çok olduğunda python sayesinde hizlandirilabilinen işlemler.
-        </p>
-    </div>
-    
+        
+        <ol>
+            <!-- Arduino -->
+            <article id=arduino>                
+                <li><h3><a href="https://www.arduino.cc/">Arduino</a></h3>
+
+                    <ul style="list-style-type: disc;">
+                        <li><h4>Web entregeli (BackEnd only) - Isı-Nem Takip sistemi</h4>
+                            <p>
+                                Bu çalışmamda ESP8266 Wifi modülünü ve DHT22 ısı-nem sensörünü kullanarak<br> 
+                                yaptığım cihaz sayesinde ölçülen değerlerin oluşturduğum web sitesine iletilmesini gerçekleştirdim. <br><br>
+                                Bu sitede hesap oluşturma, e-posta adresine gönderilen kod ile hesap doğrulama, şifremi unuttum, hesaba yeni cihaz kayıt etme,<br>
+                                kayıtlı cihazların listelenmesi ve ölçümlerinin gösterilmesi gibi sayfalar/fonksiyonlar mevcut. <br><br>
+                                Ancak bu çalışmamda öncelikli amacım arduino ile web arasında veri iletişimini sağlamak olduğundan <br>
+                                ve mevcut Front End bilgim yeterli olmadığından site prototip aşamasında.
+                            </p></li>
+                    </ul>
+                </li>
+                <!-- Arduino Resmi -->
+                <img src="img/arduino.jpg" alt="Arduino Board" height="190" width="300">
+                <p>Arduino, Mikrodenetleyici veya Mikroişlemciler ile yazılım geliştirmeyi kolaylaştıran bir devredir.</p>                
+            </article>
+            <hr>
+
+            <!-- C# -->
+            <article id=csharp>            
+            <li><h3 ><a href="https://www.w3schools.com/cs/index.php"> C# </a></h3>
+                <ul style="list-style-type: disc;">
+                    <li>                        
+                        <h4>Otomasyon Programi</h4>
+                        <p>
+                            Bir Nesne-İlişkisel eşleme çerçevesi (object relational mapper (O/RM)) olan Entity Framework 6 kullanılarak Code First yöntemi<br>
+                            ile yaptığım bu otomasyon programı FrontOffice ve BackOffice olmak üzere 2 Ana Modülden oluşmakta.<br><br>
+                            BackOffice Modülü İşletmenin kendi içerisinde yaptığı değişikliklerin sisteme girildiği modüldür. <br>
+                            Admin tarafından yapılan Yeni Ürün veya Personel Ekleme gibi işlemler bulunur.<br><br>
+                            FrontOffice ise İşletmenin çalıştığı esnada yapılan işlemlerin gerçekleştiği modüldür. <br>
+                            Siparişlerin alınması, üretilen ürünlerin adetleriyle sisteme girilmesi gibi personel tarafından yapılan işlemleri bulunur.<br>
+                        </p>
+                        <iframe width="854" height="480" src="https://www.youtube.com/embed/WFWCHn94a9w" alt="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        
+                        
+                        
+                    </li>
+
+                    <li>
+                        <h4>Web entregeli (BackEnd only) - Isı-Nem Takip sistemi</h4>
+                        <p>Arduino kısmında bahsettiğim çalışmanın Web sayfasındaki Back End fonksiyonlarini C# (ASP.NET) ile kodladim.</p>
+                    </li>
+                </ul>
+            </li>       
+            </article>
+            <hr>
+
+            <!-- Python -->
+            <article id=python>
+            <li><h3 > Python </h3>
+                <ul style="list-style-type: disc;">
+                    <li>
+                        <h4>Basit Web tarayıcı</h4>
+                        <p>
+                            PyQt kütüphaneleri ile yaptığım, Önceki sayfa, sonraki sayfa, sayfa yenileme, adres çubuğu ve home sayfası<br>
+                            gibi temel unsurların bulunduğu basit bir web tarayıcı uygulaması. 
+                        </p>
+                    </li>
+
+                    <li>
+                        <h4>Anlık olarak küçük çaplı programlara ihtiyaç duyduğumda</h4>
+                        <p>
+                            Python dilinde çalışmak diğerlerine göre daha hızlı olduğundan (IDE nin açılması gibi), kisa çözümü olan ihtiyaçlarda kullandığım bir dil.<br>
+                            Bir benzetme olarak, Kitap yazdığımda C#, kisa not almam gerektiğinde ise python tercih ediyorum.<br><br>
+                            Örnek olarak: Toplu dosya tipi dönüşümü, toplu yeniden adlandırma veya PyAutoGui işlemleri gibi aslında manuel yapılabilen<br>
+                            ama sayısı çok olduğunda python sayesinde hizlandirilabilinen işlemler.
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            </article>
+        </ol>             
+    </section>
+
+    <footer>        
+        <p><b>Alt Menü</b><p>
+        <p><a href="#aboutme">Hakkımda</a> | <a href="#arduino">Arduino</a> | <a href="#csharp">C#</a> | <a href="#python">Python</a></p>        
+    </footer>
 </body>
 </html>
 
